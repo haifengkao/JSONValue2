@@ -33,6 +33,7 @@ public enum JSONNumber: CustomStringConvertible, Hashable {
     }
 }
 
+/// sourcery: Prism
 public enum JSONValue: CustomStringConvertible, Hashable {
     case array([JSONValue])
     case object([String: JSONValue])

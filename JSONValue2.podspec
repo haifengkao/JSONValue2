@@ -7,7 +7,7 @@
 #
 
 Pod::Spec.new do |s|
-  s.name             = "JSONValueRX"
+  s.name             = "JSONValue2"
   s.version          = "7.1.0"
   s.summary          = "Simple Swift JSON representation supporting subscripting and pattern matching."
 
@@ -20,12 +20,16 @@ Pod::Spec.new do |s|
   Simple Swift JSON representation supporting subscripting and pattern matching. JSONValue uses an algebraic datatype representation of JSON for type safety and pattern matching.
                        DESC
 
-  s.homepage         = "https://github.com/rexmas/JSONValue"
+  s.homepage         = "https://github.com/haifengkao/JSONValue2.git"
   s.license          = 'MIT'
   s.author           = { "rexmas" => "rex.fenley@gmail.com" }
-  s.source           = { :git => "https://github.com/rexmas/JSONValue.git", :tag => s.version.to_s }
+  s.source           = { :git => "https://github.com/haifengkao/JSONValue2.git", :tag => s.version.to_s }
 
-  s.platform     = :ios, '10.0'
+  s.ios.deployment_target = '10.0'
+  s.osx.deployment_target = "10.12"
+
+  s.swift_version = '5.3.2'
+
   s.requires_arc = true
 
   s.source_files = 'Sources/**/*.swift'
